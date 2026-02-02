@@ -8,6 +8,8 @@ gdjs.IntroCode.GDpainel_959501Objects1= [];
 gdjs.IntroCode.GDpainel_959501Objects2= [];
 gdjs.IntroCode.GDbtn_9595comecarObjects1= [];
 gdjs.IntroCode.GDbtn_9595comecarObjects2= [];
+gdjs.IntroCode.GDbtn_9595replayObjects1= [];
+gdjs.IntroCode.GDbtn_9595replayObjects2= [];
 gdjs.IntroCode.GDAcertoObjects1= [];
 gdjs.IntroCode.GDAcertoObjects2= [];
 gdjs.IntroCode.GDCursorObjects1= [];
@@ -18,9 +20,10 @@ gdjs.IntroCode.GDFumacaObjects1= [];
 gdjs.IntroCode.GDFumacaObjects2= [];
 
 
-gdjs.IntroCode.asyncCallback9331860 = function (runtimeScene, asyncObjectsList) {
+gdjs.IntroCode.asyncCallback12793340 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Cena_01", false);
+}{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 2, 0, 0.5);
 }gdjs.IntroCode.localVariables.length = 0;
 }
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
@@ -32,7 +35,7 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.IntroCode.asyncCallback9331860(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.IntroCode.asyncCallback12793340(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -92,8 +95,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\bgm_music.mp3", 1, true, 60, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\bgm_music.mp3", 1, true, 20, 1);
 }{gdjs.evtsExt__PauseFocusLost__Active.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audio_01.mp3", 2, false, 100, 1);
 }}
 
 }
@@ -136,6 +140,8 @@ gdjs.IntroCode.GDpainel_959501Objects1.length = 0;
 gdjs.IntroCode.GDpainel_959501Objects2.length = 0;
 gdjs.IntroCode.GDbtn_9595comecarObjects1.length = 0;
 gdjs.IntroCode.GDbtn_9595comecarObjects2.length = 0;
+gdjs.IntroCode.GDbtn_9595replayObjects1.length = 0;
+gdjs.IntroCode.GDbtn_9595replayObjects2.length = 0;
 gdjs.IntroCode.GDAcertoObjects1.length = 0;
 gdjs.IntroCode.GDAcertoObjects2.length = 0;
 gdjs.IntroCode.GDCursorObjects1.length = 0;
@@ -154,6 +160,8 @@ gdjs.IntroCode.GDpainel_959501Objects1.length = 0;
 gdjs.IntroCode.GDpainel_959501Objects2.length = 0;
 gdjs.IntroCode.GDbtn_9595comecarObjects1.length = 0;
 gdjs.IntroCode.GDbtn_9595comecarObjects2.length = 0;
+gdjs.IntroCode.GDbtn_9595replayObjects1.length = 0;
+gdjs.IntroCode.GDbtn_9595replayObjects2.length = 0;
 gdjs.IntroCode.GDAcertoObjects1.length = 0;
 gdjs.IntroCode.GDAcertoObjects2.length = 0;
 gdjs.IntroCode.GDCursorObjects1.length = 0;
