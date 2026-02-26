@@ -20,7 +20,7 @@ gdjs.IntroCode.GDFumacaObjects1= [];
 gdjs.IntroCode.GDFumacaObjects2= [];
 
 
-gdjs.IntroCode.asyncCallback19553988 = function (runtimeScene, asyncObjectsList) {
+gdjs.IntroCode.asyncCallback15055140 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IntroCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Cena_01", false);
 }gdjs.IntroCode.localVariables.length = 0;
@@ -34,7 +34,7 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IntroCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.IntroCode.asyncCallback19553988(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.IntroCode.asyncCallback15055140(runtimeScene, asyncObjectsList)));
 }
 }
 
